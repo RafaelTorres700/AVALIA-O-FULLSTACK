@@ -337,6 +337,109 @@ body {
   height: 300px;
 }
 
+
+/*button buscar*/
+
+#buscar {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  background: var(--gradient-fire);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+#buscar:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+#buscar:active {
+  transform: translateY(-1px);
+}
+
+/* Efeito ripple no botão */
+#buscar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+#buscar:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* botão voltar*/
+
+#iniciar {
+  width: 300px;
+  height: 70px;
+  padding: 1.25rem 2rem;
+  background: var(--gradient-fire);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+#iniciar:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+#iniciar:active {
+  transform: translateY(-1px);
+}
+
+/* Efeito ripple no botão */
+#iniciar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: -1;  /* <-- Aqui está o segredo! */
+}
+
+#iniciar:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+
 /* ========================================
    RESPONSIVIDADE
 ======================================== */
