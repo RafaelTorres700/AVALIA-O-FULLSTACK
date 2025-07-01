@@ -209,7 +209,7 @@ footer{
   color: var(--primary-white, #FFF);  
   box-shadow: var(--shadow-heavy, 0 8px 32px rgba(0,0,0,0.2));
   font-family: var(--font-primary, 'Inter', Arial, sans-serif);
-  margin-top: 3rem;
+  margin-top: 100%;
   width: 100%;
   margin-bottom: 0px;
 }
