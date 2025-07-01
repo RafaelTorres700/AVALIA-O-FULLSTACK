@@ -198,3 +198,14 @@ nav {
     height: auto;
   }
 }
+footer{
+  background: var(--gradient-fire, linear-gradient(135deg, #E53E3E 0%, #FF6B35 100%));
+  color: var(--primary-white, #FFF);
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 20px 20px 0 0;
+  box-shadow: var(--shadow-heavy, 0 8px 32px rgba(0,0,0,0.2));
+  font-family: var(--font-primary, 'Inter', Arial, sans-serif);
+  margin-top: 3rem;
+  width: 100%;
+  padding-bottom: 0px;
+}

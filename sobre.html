@@ -46,19 +46,49 @@
     }
 
     header {
-      padding: 0;
-      text-align: center;
-      background: white;
-      color: black;
-      border-radius: 0 0 24px 24px;
-      box-shadow: var(--shadow-heavy);
-      font-family: var(--font-heading);
-    }
+  background: var(--primary-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+
+nav ul {
+  
+  list-style: none;
+  
+}
+
+nav a {
+  
+  color:#E53E3E;
+  font-size: large;
+  text-decoration: none;
+  color: var(--primary-black);
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+ nav a:hover {
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+}
+
      img {
-        align-items: end;
+        align-items: left;
         width: 200px;
     }
-
+    h1 {
+      
+      padding-left: 30px;
+    }
     .container {
       max-width: 980px;
       margin: 40px auto 0 auto;
@@ -175,6 +205,13 @@
 </head>
 <body>
   <header>
+<nav id="iniciar">
+  <ul>
+    <li><a href="/index.html">Início</a></li>
+    <li><a href="/contato.html">Contato</a></li>
+      </ul> 
+  </ul>
+</nav>
     <h1>Academia Bombadão </h1><img src="/img/logosemfundo.png" alt="">
     <div style="font-size: 1.2rem; font-weight: 500; margin-top: 0.4rem;">
       Energia, saúde e resultados para transformar sua vida!
