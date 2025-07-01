@@ -1,11 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia Bombadão </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-red: #E53E3E;
+      --primary-orange: #FF6B35;
+      --primary-black: #1A202C;
+      --primary-white: #FFFFFF;
+      --primary-gray: #2D3748;
+      --secondary-green: #38A169;
+      --secondary-blue: #3182CE;
+      --secondary-yellow: #D69E2E;
+      --secondary-purple: #805AD5;
+      --neutral-light: #F7FAFC;
+      --neutral-medium: #EDF2F7;
+      --neutral-dark: #4A5568;
+      --neutral-darker: #2D3748;
+      --gradient-fire: linear-gradient(135deg, #E53E3E 0%, #FF6B35 100%);
+      --gradient-ocean: linear-gradient(135deg, #3182CE 0%, #38A169 100%);
+      --gradient-sunset: linear-gradient(135deg, #FF6B35 0%, #D69E2E 100%);
+      --gradient-dark: linear-gradient(135deg, #1A202C 0%, #2D3748 100%);
+      --gradient-premium: linear-gradient(135deg, #805AD5 0%, #3182CE 100%);
+      --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
+      --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.15);
+      --shadow-heavy: 0 8px 32px rgba(0, 0, 0, 0.2);
+      --shadow-glow: 0 0 20px rgba(229, 62, 62, 0.3);
+      --font-primary: 'Inter', 'Segoe UI', sans-serif;
+      --font-heading: 'Poppins', 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-primary);
+      background: var(--gradient-dark);
+      min-height: 100vh;
+      color: var(--neutral-dark);
+      padding: 0;
+    }
+
+    header {
+      padding: 0;
+      text-align: center;
+      background: white;
+      color: black;
+      border-radius: 0 0 24px 24px;
+      box-shadow: var(--shadow-heavy);
+      font-family: var(--font-heading);
+    }
+     img {
+        align-items: end;
+        width: 200px;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 40px auto 0 auto;
+      background: var(--neutral-light);
+      border-radius: 16px;
+      box-shadow: var(--shadow-medium);
+      padding: 2rem;
+    }
+
+    .historia {
+      margin-bottom: 2.5rem;
+    }
+
+    .historia h2 {
+      font-family: var(--font-heading);
+      color: var(--primary-red);
+      font-size: 2.3rem;
+      margin-bottom: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    .historia p {
+      font-size: 1.2rem;
+      color: var(--neutral-dark);
+      margin-bottom: 0.6rem;
+    }
+
+    .valores {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .valor-item {
+      background: var(--neutral-medium);
+      border-left: 7px solid var(--primary-red);
+      border-radius: 8px;
+      padding: 1.2rem 1.2rem 1.2rem 1.8rem;
+      box-shadow: var(--shadow-light);
+      flex: 1 1 200px;
+      font-size: 1.07rem;
+      font-weight: 500;
+      color: var(--primary-black);
+    }
+
+    .aulas-section {
+      margin-bottom: 1.5rem;
+    }
+
+    .aulas-section h2 {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      color: var(--primary-orange);
+      margin-bottom: 1.2rem;
+    }
+
+    .aulas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .aula-card {
+      background: var(--primary-white);
+      border-radius: 12px;
+      box-shadow: var(--shadow-light);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .aula-card:hover {
+      transform: translateY(-7px) scale(1.03);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .aula-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .aula-content {
+      padding: 1rem 1.1rem 1.2rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      flex: 1;
+    }
+
+    .aula-titulo {
+      font-family: var(--font-heading);
+      color: var(--primary-red);
+      font-size: 1.23rem;
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.5px;
+    }
+
+    .aula-desc {
+      font-size: 1.08rem;
+      color: var(--neutral-darker);
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 1rem; }
+      .historia h2, .aulas-section h2 { font-size: 1.5rem; }
+      .aula-titulo { font-size: 1.05rem; }
+    }
+   
+  </style>
 </head>
 <body>
-    teste
+  <header>
+    <h1>Academia Bombadão</h1><img src="/img/logosemfundo.png" alt="">
+    <div style="font-size: 1.2rem; font-weight: 500; margin-top: 0.4rem;">
+      Energia, saúde e resultados para transformar sua vida!
+    </div>
+      </header>
+  <div class="container">
+    <section class="historia">
+      <h2>Nossa História</h2>
+      <p>
+        Fundada em 2015, a <strong>Academia Bombadão</strong> nasceu com o objetivo de proporcionar um ambiente motivador e acolhedor para todos que desejam cuidar da saúde e buscar o melhor de si. Nosso compromisso sempre foi com a qualidade, o respeito e a evolução de cada aluno.
+      </p>
+      <p>
+        Desde o início, acreditamos que academia vai muito além de levantar pesos: é sobre superar limites, conquistar autoconfiança e construir novas amizades. Por isso, investimos em estrutura moderna, equipe qualificada e uma grande variedade de aulas que estimulam corpo e mente.
+      </p>
+    </section>
+
+    <section class="valores">
+      <div class="valor-item">
+        <strong>Compromisso com Resultados:</strong> acompanhamos sua evolução de perto e celebramos cada conquista.
+      </div>
+      <div class="valor-item">
+        <strong>Ambiente Acolhedor:</strong> respeitamos a individualidade de cada um, promovendo inclusão e bem-estar.
+      </div>
+      <div class="valor-item">
+        <strong>Profissionalismo:</strong> professores certificados, equipamentos de ponta e segurança em primeiro lugar.
+      </div>
+      <div class="valor-item">
+        <strong>Inovação & Saúde:</strong> aulas e treinos modernos, integrando tecnologia e ciência do esporte.
+      </div>
+    </section>
+
+    <section class="aulas-section">
+      <h2>Nossas Aulas</h2>
+      <div class="aulas-grid">
+        <!-- Card 1 -->
+        <div class="aula-card">
+          <img class="aula-img" src="https://images.pexels.com/photos/2261485/pexels-photo-2261485.jpeg" alt="Treino de Pernas">
+          <div class="aula-content">
+            <div class="aula-titulo">Treino de Pernas</div>
+            <div class="aula-desc">
+              Exercícios focados em agachamento com barra, avanço, leg press e variações, fortalecendo toda a musculatura das pernas e glúteos. Ideal para quem busca resistência, potência e definição muscular.
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="aula-card">
+          <img class="aula-img" src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg" alt="Treino Funcional">
+          <div class="aula-content">
+            <div class="aula-titulo">Treino Funcional</div>
+            <div class="aula-desc">
+              Circuito dinâmico com exercícios que simulam movimentos do dia a dia, melhorando força, coordenação, equilíbrio e resistência cardiovascular. Perfeito para todos os níveis, com acompanhamento individualizado.
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="aula-card">
+          <img class="aula-img" src="https://images.pexels.com/photos/949132/pexels-photo-949132.jpeg" alt="Musculação">
+          <div class="aula-content">
+            <div class="aula-titulo">Musculação</div>
+            <div class="aula-desc">
+              Treinos personalizados, incluindo supino reto com halteres, remada, puxadas e máquinas para todos os grupos musculares. Foco em hipertrofia, condicionamento e saúde física com orientação de especialistas.
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="aula-card">
+          <img class="aula-img" src="https://images.pexels.com/photos/4325469/pexels-photo-4325469.jpeg" alt="Alongamento">
+          <div class="aula-content">
+            <div class="aula-titulo">Alongamento</div>
+            <div class="aula-desc">
+              Aula em grupo para desenvolver flexibilidade, mobilidade articular e relaxamento muscular. Ajuda a prevenir lesões, melhora a postura e traz sensação de bem-estar para o dia a dia.
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="aula-card">
+          <img class="aula-img" src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg" alt="Spinning">
+          <div class="aula-content">
+            <div class="aula-titulo">Spinning</div>
+            <div class="aula-desc">
+              Aula animada de bike indoor, com trilhas sonoras motivadoras. Trabalha resistência cardiovascular, emagrecimento, força de pernas e muita energia em grupo para você sair renovado a cada pedalada.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
