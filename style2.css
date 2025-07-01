@@ -198,6 +198,7 @@ nav {
     height: auto;
   }
 }
+<<<<<<< HEAD
 footer{
   background: var(--gradient-fire, linear-gradient(135deg, #E53E3E 0%, #FF6B35 100%));
   color: var(--primary-white, #FFF);
@@ -209,3 +210,10 @@ footer{
   width: 100%;
   padding-bottom: 0px;
 }
+=======
+
+.carrossel-titulo{
+    text-align: center;
+}
+
+>>>>>>> 3f7819df51f1fd879a684b00b930524b597fa065

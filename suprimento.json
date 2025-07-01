@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nome": "Whey Gold Standard 100% Whey – Optimum Nutrition (907g)",
+    "tipo": "Proteína",
+    "descricao": "Suplemento proteico com 24g de proteína por dose, ideal para recuperação muscular.",
+    "marca": "Optimum Nutrition",
+    "dose_diaria": "30g",
+    "imagem": "https://cdn.dooca.store/2383/products/jml0tkp2ywpysb7npvpwz2bzpamkcxoo5foo.jpg?v=1718291790"
+  },
+  {
+    "id": 2,
+    "nome": "Creatina 100% Pura Hardcore – Integralmédica (300g)",
+    "tipo": "Creatina",
+    "descricao": "Creatina monohidratada pura para aumento de força e performance.",
+    "marca": "Integralmédica",
+    "dose_diaria": "5g",
+    "imagem": "https://bandshop.vtexassets.com/arquivos/ids/274349/image-6d7d630d9dda40238263aa1e5bbed32b.jpg?v=638827508273700000"
+  },
+  {
+    "id": 3,
+    "nome": "BCAA 2400mg – Growth Supplements (120 cápsulas)",
+    "tipo": "Aminoácidos",
+    "descricao": "Aminoácidos essenciais para recuperação muscular e redução da fadiga.",
+    "marca": "Growth Supplements",
+    "dose_diaria": "6 cápsulas",
+    "imagem": "https://images.tcdn.com.br/img/img_prod/740081/bcaa_2400mg_pote_60_tabletes_3397_1_6eb9569dd6ff6d1548d7aa7693bb106f.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Omega 3 1000mg – Sundown Naturals (60 cápsulas)",
+    "tipo": "Ômega3",
+    "descricao": "Suplemento para saúde cardiovascular e cerebral.",
+    "marca": "Sundown Naturals",
+    "dose_diaria": "2 cápsulas",
+    "imagem": "https://www.nutricaoatevoce.com.br/media/catalog/product/cache/3f091c246aa3c76f3e4c9f2d55ddba5b/1/2/12532803_1.jpg"
+  },
+  {
+    "id": 5,
+    "nome": "Glutamina – Max Titanium (300g)",
+    "tipo": "Aminoácido",
+    "descricao": "Auxilia na recuperação muscular e fortalecimento do sistema imunológico.",
+    "marca": "Max Titanium",
+    "dose_diaria": "5g",
+    "imagem": "https://lojamaxtitanium.vtexassets.com/arquivos/ids/157714-1920-0/lg-max-titanium-300g-1.jpg?v=638361906136400000"
+  }
+]

@@ -42,3 +42,7 @@ function voltar() {
   indexAtual = (indexAtual - 1 + produtos.length) % produtos.length;
   atualizarCarrossel();
 }
+
+
+
+
