@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Academia Bombadão</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style2.css" />
 </head>
 <body>
 
+  <!-- Cabeçalho com Navegação -->
   <header>
     <nav>
-      <img src="img/logosemfundo.png" alt="Academia Bombadão" class="nav-logo" />
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#planos">Planos</a></li>
-        <li><a href="#contato">Contato</a></li>
+      <div class="logo-container">
+        <img src="img/logosemfundo.png" alt="Logo da Academia Bombadão" class="nav-logo" />
+      </div>
+      <ul class="nav-menu">
+        <li><a href="/index.html">Início</a></li>
+        <li><a href="/sobre.html">Sobre</a></li>
+        <li><a href="/contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Seção do Carrossel -->
   <main>
-    <h2 class="carrossel-titulo">Carrossel de Treinos</h2>
-    <div class="carrossel-container">
-      <button class="btn left" onclick="voltar()">‹</button>
-      <div class="carrossel" id="carrossel"></div>
-      <button class="btn right" onclick="avancar()">›</button>
-    </div>
+    <section class="carrossel-section">
+      <h2 class="carrossel-titulo">Carrossel de Treinos</h2>
+      <div class="carrossel-container">
+        <button class="btn left" aria-label="Anterior" onclick="voltar()">‹</button>
+        <div class="carrossel" id="carrossel">
+          <!-- Itens do carrossel serão adicionados via JavaScript -->
+        </div>
+        <button class="btn right" aria-label="Próximo" onclick="avancar()">›</button>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
