@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academia Bombadão </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia Bombadão</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="style2.css" />
+  <!-- Certifique-se de que o arquivo style.css contenha o CSS global com o header formatado -->
   <style>
     :root {
       --primary-red: #E53E3E;
@@ -35,7 +36,11 @@
       --font-mono: 'JetBrains Mono', monospace;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: var(--font-primary);
@@ -45,58 +50,15 @@
       padding: 0;
     }
 
-    header {
-  background: var(--primary-white);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+.container {
+  width: 100%;
+  max-width: 1200px;         /* mesmo valor que será usado no header */
+  margin: -1rem auto 0 auto;  /* centraliza */
+  background: var(--neutral-light);
+  border-radius: 16px;
+  box-shadow: var(--shadow-medium);
+  padding: 2rem;
 }
-
-
-nav ul {
-  
-  list-style: none;
-  
-}
-
-nav a {
-  
-  color:#E53E3E;
-  font-size: large;
-  text-decoration: none;
-  color: var(--primary-black);
-  font-weight: 600;
-  padding: 0.3rem 1rem;
-  
-  border-radius: 4px;
-  transition: background 0.3s;
-}
-
- nav a:hover {
-  background-color: var(--primary-red);
-  color: var(--primary-white);
-}
-
-     img {
-        align-items: left;
-        width: 200px;
-    }
-    h1 {
-      
-      padding-left: 30px;
-    }
-    .container {
-      max-width: 980px;
-      margin: 40px auto 0 auto;
-      background: var(--neutral-light);
-      border-radius: 16px;
-      box-shadow: var(--shadow-medium);
-      padding: 2rem;
-    }
 
     .historia {
       margin-bottom: 2.5rem;
@@ -162,6 +124,7 @@ nav a {
       align-items: stretch;
       transition: transform 0.2s, box-shadow 0.2s;
     }
+
     .aula-card:hover {
       transform: translateY(-7px) scale(1.03);
       box-shadow: var(--shadow-medium);
@@ -196,31 +159,40 @@ nav a {
     }
 
     @media (max-width: 600px) {
-      .container { padding: 1rem; }
-      .historia h2, .aulas-section h2 { font-size: 1.5rem; }
-      .aula-titulo { font-size: 1.05rem; }
+      .container {
+        padding: 1rem;
+      }
+
+      .historia h2,
+      .aulas-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .aula-titulo {
+        font-size: 1.05rem;
+      }
     }
-   
   </style>
 </head>
 <body>
-  <!-- Cabeçalho com Navegação -->
-<div class="header-sobre">
-  <header>
-    <nav>
-      <div class="logo-container">
-        <img src="/img/logosemfundo.png" alt="Logo da Academia Bombadão" class="nav-logo" />
-      </div>
-      <ul class="nav-menu">
-        <li><a href="/index.html">Início</a></li>
-        <li><a href="/sobre.html">Sobre</a></li>
-        <li><a href="/contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
 
+  <!-- Header com navegação (herda do CSS externo) -->
+  <div class="header-sobre">
+    <header>
+      <nav>
+        <div class="logo-container">
+          <img src="/img/logosemfundo.png" alt="Logo da Academia Bombadão" class="nav-logo" />
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/index.html">Início</a></li>
+          <li><a href="/sobre.html">Sobre</a></li>
+          <li><a href="/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
+  <!-- Conteúdo principal -->
   <div class="container">
     <section class="historia">
       <h2>Nossa História</h2>
@@ -233,71 +205,49 @@ nav a {
     </section>
 
     <section class="valores">
-      <div class="valor-item">
-        <strong>Compromisso com Resultados:</strong> acompanhamos sua evolução de perto e celebramos cada conquista.
-      </div>
-      <div class="valor-item">
-        <strong>Ambiente Acolhedor:</strong> respeitamos a individualidade de cada um, promovendo inclusão e bem-estar.
-      </div>
-      <div class="valor-item">
-        <strong>Profissionalismo:</strong> professores certificados, equipamentos de ponta e segurança em primeiro lugar.
-      </div>
-      <div class="valor-item">
-        <strong>Inovação & Saúde:</strong> aulas e treinos modernos, integrando tecnologia e ciência do esporte.
-      </div>
+      <div class="valor-item"><strong>Compromisso com Resultados:</strong> acompanhamos sua evolução de perto e celebramos cada conquista.</div>
+      <div class="valor-item"><strong>Ambiente Acolhedor:</strong> respeitamos a individualidade de cada um, promovendo inclusão e bem-estar.</div>
+      <div class="valor-item"><strong>Profissionalismo:</strong> professores certificados, equipamentos de ponta e segurança em primeiro lugar.</div>
+      <div class="valor-item"><strong>Inovação & Saúde:</strong> aulas e treinos modernos, integrando tecnologia e ciência do esporte.</div>
     </section>
 
     <section class="aulas-section">
       <h2>Nossas Aulas</h2>
       <div class="aulas-grid">
-        <!-- Card 1 -->
+        <!-- Cards de Aulas -->
         <div class="aula-card">
-          <img class="aula-img" src="https://images.pexels.com/photos/2261485/pexels-photo-2261485.jpeg" alt="Treino de Pernas">
+          <img class="aula-img" src="https://images.pexels.com/photos/2261485/pexels-photo-2261485.jpeg" alt="Treino de Pernas" />
           <div class="aula-content">
             <div class="aula-titulo">Treino de Pernas</div>
-            <div class="aula-desc">
-              Exercícios focados em agachamento com barra, avanço, leg press e variações, fortalecendo toda a musculatura das pernas e glúteos. Ideal para quem busca resistência, potência e definição muscular.
-            </div>
+            <div class="aula-desc">Exercícios focados em agachamento com barra, avanço, leg press e variações, fortalecendo toda a musculatura das pernas e glúteos.</div>
           </div>
         </div>
-        <!-- Card 2 -->
         <div class="aula-card">
-          <img class="aula-img" src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg" alt="Treino Funcional">
+          <img class="aula-img" src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg" alt="Treino Funcional" />
           <div class="aula-content">
             <div class="aula-titulo">Treino Funcional</div>
-            <div class="aula-desc">
-              Circuito dinâmico com exercícios que simulam movimentos do dia a dia, melhorando força, coordenação, equilíbrio e resistência cardiovascular. Perfeito para todos os níveis, com acompanhamento individualizado.
-            </div>
+            <div class="aula-desc">Circuito dinâmico que melhora força, coordenação e resistência. Adaptável para todos os níveis com acompanhamento.</div>
           </div>
         </div>
-        <!-- Card 3 -->
         <div class="aula-card">
-          <img class="aula-img" src="https://images.pexels.com/photos/949132/pexels-photo-949132.jpeg" alt="Musculação">
+          <img class="aula-img" src="https://images.pexels.com/photos/949132/pexels-photo-949132.jpeg" alt="Musculação" />
           <div class="aula-content">
             <div class="aula-titulo">Musculação</div>
-            <div class="aula-desc">
-              Treinos personalizados, incluindo supino reto com halteres, remada, puxadas e máquinas para todos os grupos musculares. Foco em hipertrofia, condicionamento e saúde física com orientação de especialistas.
-            </div>
+            <div class="aula-desc">Treinos personalizados com foco em hipertrofia e condicionamento físico sob orientação profissional.</div>
           </div>
         </div>
-        <!-- Card 4 -->
         <div class="aula-card">
-          <img class="aula-img" src="https://images.pexels.com/photos/4325469/pexels-photo-4325469.jpeg" alt="Alongamento">
+          <img class="aula-img" src="https://images.pexels.com/photos/4325469/pexels-photo-4325469.jpeg" alt="Alongamento" />
           <div class="aula-content">
             <div class="aula-titulo">Alongamento</div>
-            <div class="aula-desc">
-              Aula em grupo para desenvolver flexibilidade, mobilidade articular e relaxamento muscular. Ajuda a prevenir lesões, melhora a postura e traz sensação de bem-estar para o dia a dia.
-            </div>
+            <div class="aula-desc">Aula em grupo para desenvolver flexibilidade, mobilidade e relaxamento. Melhora a postura e previne lesões.</div>
           </div>
         </div>
-        <!-- Card 5 -->
         <div class="aula-card">
-          <img class="aula-img" src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg" alt="Spinning">
+          <img class="aula-img" src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg" alt="Spinning" />
           <div class="aula-content">
             <div class="aula-titulo">Spinning</div>
-            <div class="aula-desc">
-              Aula animada de bike indoor, com trilhas sonoras motivadoras. Trabalha resistência cardiovascular, emagrecimento, força de pernas e muita energia em grupo para você sair renovado a cada pedalada.
-            </div>
+            <div class="aula-desc">Aula de bike indoor com trilha animada. Trabalha cardio, emagrecimento e resistência de pernas.</div>
           </div>
         </div>
       </div>
