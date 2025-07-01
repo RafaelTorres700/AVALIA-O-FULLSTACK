@@ -1,10 +1,33 @@
 [
   {
     "id": 1,
-    "produto": "Notebook Dell Inspiron",
-    "preco": 3899.99,
-    "detalhe": "Notebook com Intel Core i5, 8GB RAM, SSD 256GB",
-    "imagem": "imagens/mouse-logitech.jpg"
+    "titulo": "Treino de Pernas",
+    "descricao": "Exercício de agachamento com barra",
+    "imagem": "https://images.pexels.com/photos/2261485/pexels-photo-2261485.jpeg"
+  },
+  {
+    "id": 2,
+    "titulo": "Treino Funcional",
+    "descricao": "Circuito funcional para resistência",
+    "imagem": "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg"
+  },
+  {
+    "id": 3,
+    "titulo": "Musculação",
+    "descricao": "Supino reto com halteres",
+    "imagem": "https://images.pexels.com/photos/949132/pexels-photo-949132.jpeg"
+  },
+  {
+    "id": 4,
+    "titulo": "Alongamento",
+    "descricao": "Aula de alongamento em grupo",
+    "imagem": "https://images.pexels.com/photos/4325469/pexels-photo-4325469.jpeg"
+  },
+  {
+    "id": 5,
+    "titulo": "Spinning",
+    "descricao": "Aula de bike indoor",
+    "imagem": "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg"
   }
   
 ]
